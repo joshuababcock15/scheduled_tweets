@@ -19,6 +19,6 @@
 
   <%= form.button "Schedule", class: "btn btn-primary"  %>
   <% if form.object.persisted? %>
-    <%= link_to "Delete", form.object, method: :delete, data: { turbo_method: :delete, confirm: "Are you sure?" }, class: "btn btn-outline-danger" %>
+    <%= button_to "Delete", form.object, method: :delete, data: { turbo_method: :delete, confirm: "Are you sure?" }, class: "btn btn-outline-danger" %>
   <% end %>
 <% end %>
